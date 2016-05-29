@@ -11,7 +11,7 @@ Licensed under the MIT License.
 Changelog
 ---------
 
-2016-05-28: **v0.1**
+2016-05-28: v0.1
   Initial release.
 
 .. _anki: http://ankisrs.net
