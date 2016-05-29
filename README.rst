@@ -8,6 +8,11 @@ reveal the answer in under a second.
 
 Licensed under the MIT License.
 
+Download
+--------
+
+See the `add-on page <https://ankiweb.net/shared/info/1834460432>`__.
+
 Changelog
 ---------
 
