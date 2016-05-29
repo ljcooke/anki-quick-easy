@@ -27,8 +27,11 @@ SOFTWARE.
 import time
 
 from anki.hooks import addHook
-
 from aqt.reviewer import Reviewer
+
+
+# Edit this line to adjust how quickly you must reveal the answer
+EASY_SECONDS = 1.0
 
 
 class Timer(object):
@@ -53,7 +56,7 @@ def my_defaultEase(self):
     ease = orig_defaultEase(self)
 
     answer_time = timer.stop()
-    if 1.0 <= answer_time:
+    if EASY_SECONDS <= answer_time:
         return ease
 
     max_ease = self.mw.col.sched.answerButtons(self.card)
