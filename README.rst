@@ -16,9 +16,9 @@ See the `add-on page <https://ankiweb.net/shared/info/1834460432>`__.
 Changelog
 ---------
 
-Unreleased
+2016-05-30: v0.3
   Use Anki's timer.
-  Don't change focus if the card has been seen already in the review session.
+  Don't change focus if the card was answered already.
 
 2016-05-29: v0.2
   Edit one line in the file to adjust the 'easy' time.
