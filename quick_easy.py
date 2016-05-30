@@ -37,7 +37,16 @@ EASY_SECONDS = 1.0
 def my_defaultEase(self):
     ease = orig_defaultEase(self)
 
+    if self.hadCardQueue:
+        # card came from the undo queue
+        return ease
+
     if EASY_SECONDS * 1000 <= self.card.timeTaken():
+        # wasn't answered quickly
+        return ease
+
+    if self.card.id in self._answeredIds:
+        # card is being reviewed again
         return ease
 
     max_ease = self.mw.col.sched.answerButtons(self.card)

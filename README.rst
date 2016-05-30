@@ -18,6 +18,7 @@ Changelog
 
 Unreleased
   Use Anki's timer.
+  Don't change focus if the card has been seen already in the review session.
 
 2016-05-29: v0.2
   Edit one line in the file to adjust the 'easy' time.
