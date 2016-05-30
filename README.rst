@@ -16,6 +16,9 @@ See the `add-on page <https://ankiweb.net/shared/info/1834460432>`__.
 Changelog
 ---------
 
+Unreleased
+  Use Anki's timer.
+
 2016-05-29: v0.2
   Edit one line in the file to adjust the 'easy' time.
 

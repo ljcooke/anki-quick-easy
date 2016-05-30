@@ -1,5 +1,5 @@
 """
-Quick & Easy v0.2
+Quick & Easy v0.3-dev
 Makes 'Easy' easy when you answer quickly.
 
 Copyright (c) 2016 Liam Cooke
@@ -34,36 +34,15 @@ from aqt.reviewer import Reviewer
 EASY_SECONDS = 1.0
 
 
-class Timer(object):
-
-    def __init__(self):
-        self._t = 0.0
-
-    def start(self):
-        self._t = time.time()
-
-    def stop(self):
-        elapsed, self._t = time.time() - self._t, 0.0
-        return elapsed
-
-
-timer = Timer()
-
-def onShowQuestion():
-    timer.start()
-
 def my_defaultEase(self):
     ease = orig_defaultEase(self)
 
-    answer_time = timer.stop()
-    if EASY_SECONDS <= answer_time:
+    if EASY_SECONDS * 1000 <= self.card.timeTaken():
         return ease
 
     max_ease = self.mw.col.sched.answerButtons(self.card)
     return min(ease + 1, max_ease)
 
-
-addHook('showQuestion', onShowQuestion)
 
 orig_defaultEase = Reviewer._defaultEase
 Reviewer._defaultEase = my_defaultEase
