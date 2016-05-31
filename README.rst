@@ -6,6 +6,9 @@ An add-on for Anki_. Makes 'Easy' easy when you answer quickly.
 During revision, this add-on puts the focus on the 'Easy' answer button if you
 reveal the answer in under a second.
 
+Works great in combination with Kenishi's `Answer Key Cascade
+<https://ankiweb.net/shared/info/992946134>`__ add-on.
+
 Licensed under the MIT License.
 
 Download
