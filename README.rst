@@ -16,8 +16,21 @@ Download
 
 See the `add-on page <https://ankiweb.net/shared/info/1834460432>`__.
 
+Development
+-----------
+
+For Anki 2.0.x, copy the *quick_easy.py* file from the *quick_easy* directory
+to your Anki *addons* directory.
+
+For Anki 2.1.x Beta, copy the entire *quick_easy* directory to your Anki
+*addons21* directory.
+
 Changelog
 ---------
+
+2018-04-05: v1.0
+  Support Anki 2.1 Beta.
+  Make the answer time configurable.
 
 2016-05-30: v0.3
   Use Anki's timer.
@@ -29,4 +42,4 @@ Changelog
 2016-05-28: v0.1
   Initial release.
 
-.. _anki: http://ankisrs.net
+.. _anki: https://apps.ankiweb.net
