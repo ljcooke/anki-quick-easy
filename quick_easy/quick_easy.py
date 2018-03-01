@@ -1,5 +1,5 @@
 """
-Quick & Easy v0.3
+Quick & Easy v1.0
 Makes 'Easy' easy when you answer quickly.
 
 Copyright (c) 2016-2018 Liam Cooke

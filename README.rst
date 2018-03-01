@@ -28,9 +28,9 @@ For Anki 2.1.x Beta, copy the entire *quick_easy* directory to your Anki
 Changelog
 ---------
 
-Unreleased:
-  Support Anki 2.1.
-  Make the answer time configurable in Anki.
+2018-04-05: v1.0
+  Support Anki 2.1 Beta.
+  Make the answer time configurable.
 
 2016-05-30: v0.3
   Use Anki's timer.
