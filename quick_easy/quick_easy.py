@@ -27,11 +27,26 @@ SOFTWARE.
 import time
 
 from anki.hooks import addHook
+from aqt import mw
 from aqt.reviewer import Reviewer
 
 
-# Edit this line to adjust how quickly you must reveal the answer
-EASY_SECONDS = 1.0
+# Default configuration for Anki 2.0
+LEGACY_CONFIG = {
+    'seconds': 1.0,
+}
+
+
+def config():
+    """
+    Configuration via config.json (introduced in Anki 2.1)
+    """
+    try:
+        getConfig = mw.addonManager.getConfig
+    except AttributeError:
+        return LEGACY_CONFIG
+
+    return getConfig(__name__)
 
 
 def my_defaultEase(self):
@@ -41,7 +56,7 @@ def my_defaultEase(self):
         # card came from the undo queue
         return ease
 
-    if EASY_SECONDS * 1000 <= self.card.timeTaken():
+    if config()['seconds'] * 1000 <= self.card.timeTaken():
         # wasn't answered quickly
         return ease
 
