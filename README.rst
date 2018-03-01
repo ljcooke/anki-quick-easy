@@ -19,6 +19,10 @@ See the `add-on page <https://ankiweb.net/shared/info/1834460432>`__.
 Changelog
 ---------
 
+Unreleased:
+  Support Anki 2.1.
+  Make the answer time configurable in Anki.
+
 2016-05-30: v0.3
   Use Anki's timer.
   Don't change focus if the card was answered already.
@@ -29,4 +33,4 @@ Changelog
 2016-05-28: v0.1
   Initial release.
 
-.. _anki: http://ankisrs.net
+.. _anki: https://apps.ankiweb.net

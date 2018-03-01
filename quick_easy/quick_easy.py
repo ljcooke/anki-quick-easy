@@ -2,8 +2,8 @@
 Quick & Easy v0.3
 Makes 'Easy' easy when you answer quickly.
 
-Copyright (c) 2016 Liam Cooke
-https://github.com/araile/anki-quick-easy
+Copyright (c) 2016-2018 Liam Cooke
+https://github.com/ljcooke/anki-quick-easy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
