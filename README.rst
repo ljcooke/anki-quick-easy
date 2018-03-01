@@ -16,6 +16,15 @@ Download
 
 See the `add-on page <https://ankiweb.net/shared/info/1834460432>`__.
 
+Development
+-----------
+
+For Anki 2.0.x, copy the *quick_easy.py* file from the *quick_easy* directory
+to your Anki *addons* directory.
+
+For Anki 2.1.x Beta, copy the entire *quick_easy* directory to your Anki
+*addons21* directory.
+
 Changelog
 ---------
 
